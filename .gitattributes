@@ -1,0 +1,47 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Python
+*.py    text diff=python
+*.pyi   text diff=python
+
+# C / C++
+*.c     text diff=c
+*.h     text diff=c
+*.cpp   text diff=cpp
+*.hpp   text diff=cpp
+
+# LaTeX
+*.tex       text
+*.bib       text
+*.cls       text
+*.sty       text
+
+# Config / data
+*.json  text
+*.yml   text
+*.yaml  text
+*.txt   text
+*.md    text
+*.csv   text
+
+# Binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.pdf   binary
+*.exe   binary
+*.dll   binary
+*.pyd   binary
+*.so    binary
+*.o     binary
+*.a     binary
+*.lib   binary
+
+# Lock / fixtures that must stay byte-exact
+*.a2l   binary
+*.xlsx  binary
+*.axf   binary
+*.elf   binary
+*.map   binary

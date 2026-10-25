@@ -1,0 +1,18 @@
+\begin{table}[t]
+\caption{Safety at auto threshold 0.45: false auto-acceptance on 127 confusable pairs and 60 distractors.}
+\label{tab:safety}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lccc}
+\toprule
+Configuration & Valid cov. & Conf.\ FP & Distr.\ FP \\
+\midrule
+w/o type/IO penalty & 93.9 & 100.0 & 33.3 \\
+Ours + struct. score term & 90.1 & 0.0 & 3.3 \\
+Retrieval-only & 99.7 & 100.0 & 56.7 \\
+Levenshtein & 86.0 & 100.0 & 96.7 \\
+\textbf{Ours (full fusion)} & \textbf{93.6} & \textbf{0.0} & \textbf{1.7} \\
+\bottomrule
+\end{tabular}
+\end{table}

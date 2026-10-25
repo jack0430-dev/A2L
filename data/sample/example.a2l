@@ -1,0 +1,29 @@
+ASAP2_VERSION 1 60
+/begin PROJECT A2L_Update_Demo ""
+
+  /begin MODULE Demo ""
+
+    /begin MEMORY_SEGMENT Cal 0x00200000 0x2000 -1 -1 -1 -1 -1
+    /end MEMORY_SEGMENT
+
+    /begin MEMORY_SEGMENT Meas 0x00400000 0x2000 -1 -1 -1 -1 -1
+    /end MEMORY_SEGMENT
+
+    /begin A2ML
+
+      struct Diag_Frame {
+        uint;  /* Diag response counter */
+        uint;  /* Diag pending mask */
+      };
+
+      struct Rte_Channel {
+        uword;  /* Channel identifier */
+        uword;  /* Channel timeout counter */
+        ubyte;  /* Channel state machine state */
+        ubyte;  /* Channel error flags */
+      };
+
+    /end A2ML
+
+  /end MODULE
+/end PROJECT

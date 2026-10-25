@@ -1,0 +1,18 @@
+\begin{table}[t]
+\caption{Ablation of evidence channels (percentages; Delta = drop vs.\ the full model, Hard = multi-hop subset). A removed channel is removed for good: \emph{token only} ranks the whole knowledge base by deterministic decomposition, \emph{retrieval only} ranks it by the retriever, and the post-fusion constraint is switched off entirely.}
+\label{tab:ablation}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccc}
+\toprule
+Configuration & Top-1 & Top-5 & Delta & Hard Top-1 \\
+\midrule
+Full & 99.0 & 100.0 & +0.0 & 97.6 \\
+w/o token evidence (retrieval only) & 99.0 & 100.0 & +0.0 & 97.6 \\
+w/o retrieval (token only) & 64.3 & 74.8 & -34.7 & 33.3 \\
+w/o post-fusion constraint & 99.0 & 100.0 & +0.0 & 97.6 \\
+KB name-only & 99.4 & 100.0 & +0.3 & 98.8 \\
+\bottomrule
+\end{tabular}
+\end{table}

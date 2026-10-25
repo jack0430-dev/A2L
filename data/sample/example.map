@@ -1,0 +1,23 @@
+Linker map for the A2L Update Tool demo project (GCC ld flavour).
+The address file is the only source of truth for symbol addresses and sizes.
+Symbol names follow the IO-suffix convention: "_C" = calibration, "_M" = measurement.
+
+.cal
+                0x00200000                0x10 cal_Nvm_Backup_C
+                0x00200010                0x08 cal_EngineSpeed_Max_C
+                0x00200018                0x08 cal_TorqueLimit_Max_C
+                0x00200020                0x04 cal_RteChannelTimeout_C
+                0x00200024                0x04 cal_DiagCounter_C
+                0x00200028                0x04 cal_DiagPendingMask_C
+
+.meas
+                0x00400000                0x04 meas_EngineSpeed_M
+                0x00400004                0x04 meas_VehicleSpeed_M
+                0x00400008                0x04 meas_ThrottlePosition_M
+                0x0040000c                0x04 meas_BrakePedalPosition_M
+                0x00400010                0x04 meas_RteChannelId_M
+                0x00400014                0x04 meas_RteChannelState_M
+                0x00400018                0x04 meas_RteChannelErrorFlags_M
+                0x0040001c                0x04 meas_DiagFrameCounter_M
+                0x00400020                0x08 meas_RteChannelTable_M
+                0x00400028                0x08 meas_DiagFramePending_M

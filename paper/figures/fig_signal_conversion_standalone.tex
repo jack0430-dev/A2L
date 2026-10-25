@@ -1,0 +1,28 @@
+% Standalone wrapper for the signal-conversion figure.
+%
+%   py -3.12 paper/figures/build_signal_conversion_figure.py
+%
+% Produces fig_signal_conversion.pdf next to this file.  The main document
+% (paper/main.tex) includes that PDF, so the figure is always available.
+%
+% mathptmx/times provides the same Times metrics that IEEEtran uses for the
+% main text, so the standalone PDF is typographically identical to the
+% in-document rendering (same glyph widths -> no unexpected line breaks).
+% border=0 + varwidth/varheight: the page is cut to exactly the IEEEtran text
+% width (18.13 cm) and to the height of the drawing, so the document can
+% include the PDF with width=\textwidth and obtain a scale of 1.000; the
+% declared point sizes are then the printed sizes.
+\documentclass[border=0pt,varwidth=18.13cm,varheight=6.15cm]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+% NOTE: \parboxsep is not defined by every LaTeX kernel (the Tectonic bundle
+% used here does not provide it), and PGF's \parbox-based text boxes do not
+% use it either -- the node width is text width + 2 * inner sep.  The figure
+% therefore relies on inner sep only and must not set \parboxsep.
+\begin{document}
+\input{fig_signal_conversion.tex}%
+\end{document}

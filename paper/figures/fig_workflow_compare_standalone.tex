@@ -1,0 +1,22 @@
+% Standalone wrapper for the workflow comparison figure.
+%
+%   pdflatex fig_workflow_compare_standalone.tex   (run twice)
+% or: py -3.12 paper/figures/build_workflow_figure.py
+%
+% Produces fig_workflow_compare.pdf next to this file.  The main document
+% (paper/main.tex) includes that PDF when it exists and falls back to
+% \input of the TikZ source otherwise, so the figure is always available.
+%
+% mathptmx provides the same Times metrics that IEEEtran uses for the main
+% text, so the standalone PDF is typographically identical to the fallback
+% path (same glyph widths -> no unexpected line breaks in the cells).
+\documentclass[border=6pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\begin{document}
+\input{fig_workflow_compare.tex}
+\end{document}

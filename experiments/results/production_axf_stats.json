@@ -1,0 +1,22 @@
+{
+ "meta": {
+  "firmware": "data/TcuBsw.axf",
+  "architecture": "ELF32 / ARM (0x28), HighTec toolchain, DWARF",
+  "elapsed_s": 9.31
+ },
+ "counts": {
+  "elf_symbols": 4003,
+  "dwarf_signals": 31316,
+  "exact_match": 28812,
+  "failed_exact_match": 2504,
+  "distinct_failed_names": 580
+ },
+ "failure_rate": {
+  "failed_exact_match_pct": 7.9959
+ },
+ "expected": {
+  "dwarf_signals": 31316,
+  "exact_match": 28812,
+  "failed_exact_match": 2504
+ }
+}

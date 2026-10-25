@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Robustness across 10 random calibration/test splits (thresholds re-calibrated per split).}
+\label{tab:robustness}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccc}
+\toprule
+Metric & Mean (\%) & Std (\%) & Min (\%) & Max (\%) \\
+\midrule
+Top-1 & 99.5 & $\pm$0.4 & 99.1 & 100.0 \\
+Hard Top-1 & 98.6 & $\pm$0.9 & 97.6 & 100.0 \\
+AUTO coverage & 93.5 & $\pm$1.4 & 91.4 & 96.9 \\
+AUTO precision & 99.3 & $\pm$0.3 & 99.0 & 99.7 \\
+Confusable FP & 0.0 & $\pm$0.0 & 0.0 & 0.0 \\
+Distractor FP & 1.8 & $\pm$2.3 & 0.0 & 8.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

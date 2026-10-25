@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.25cm" height="6.25cm" viewBox="0 0 730 250" font-family="Segoe UI,Helvetica,Arial,sans-serif">
+<defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6.5" refY="2.6" orient="auto"><path d="M0,0 L6.5,2.6 L0,5.2 z" fill="#666"/></marker></defs>
+<rect width="730" height="250" fill="#ffffff"/>
+<line x1="144.0" y1="21.0" x2="148.0" y2="21.0" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="244.1" y1="21.0" x2="248.0" y2="21.0" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="144.0" y1="21.0" x2="144.0" y2="27.8" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="248.0" y1="21.0" x2="248.0" y2="27.8" stroke="#8a8a8a" stroke-width="1.3"/>
+<rect x="147.9" y="12.0" width="96.1" height="13" fill="#ffffff"/>
+<text x="196.0" y="25.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#444444" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Search &amp; Evidence</text>
+<line x1="352.0" y1="21.0" x2="363.9" y2="21.0" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="444.1" y1="21.0" x2="456.0" y2="21.0" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="352.0" y1="21.0" x2="352.0" y2="27.8" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="456.0" y1="21.0" x2="456.0" y2="27.8" stroke="#8a8a8a" stroke-width="1.3"/>
+<rect x="363.9" y="12.0" width="80.2" height="13" fill="#ffffff"/>
+<text x="404.0" y="25.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#444444" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Check &amp; Decide</text>
+<line x1="560.0" y1="21.0" x2="571.9" y2="21.0" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="652.1" y1="21.0" x2="664.0" y2="21.0" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="560.0" y1="21.0" x2="560.0" y2="27.8" stroke="#8a8a8a" stroke-width="1.3"/>
+<line x1="664.0" y1="21.0" x2="664.0" y2="27.8" stroke="#8a8a8a" stroke-width="1.3"/>
+<rect x="571.9" y="12.0" width="80.2" height="13" fill="#ffffff"/>
+<text x="612.0" y="25.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#444444" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Audit &amp; Review</text>
+<circle cx="142.4" cy="40.2" r="6.0" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<line x1="146.8" y1="44.6" x2="152.0" y2="49.8" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="144.0" y="65.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#666666" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">1.  Candidates</text>
+<ellipse cx="248.0" cy="37.0" rx="8.0" ry="3.4" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<line x1="240.0" y1="37.0" x2="240.0" y2="47.8" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="256.0" y1="37.0" x2="256.0" y2="47.8" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<ellipse cx="248.0" cy="43.0" rx="8.0" ry="3.4" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<ellipse cx="248.0" cy="48.2" rx="8.0" ry="3.4" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<text x="248.0" y="65.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#666666" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">2.  Evidence</text>
+<path d="M344.4,34.6 L359.6,34.6 L359.6,43.0 L352.0,50.6 L344.4,43.0 Z" fill="none" stroke="#8a8a8a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="352.0" y="65.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#666666" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">3.  Consistency</text>
+<line x1="448.0" y1="42.2" x2="456.0" y2="42.2" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="456.0" y1="42.2" x2="462.4" y2="36.2" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="456.0" y1="42.2" x2="464.0" y2="42.2" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="456.0" y1="42.2" x2="462.4" y2="48.2" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="463.6" cy="35.8" r="2.0" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<circle cx="464.8" cy="42.2" r="2.0" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<circle cx="463.6" cy="48.6" r="2.0" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<text x="456.0" y="65.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#666666" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">4.  Decision</text>
+<rect x="553.6" y="50.6" width="12.8" height="-16.8" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<line x1="562.0" y1="33.8" x2="562.0" y2="38.2" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="562.0" y1="38.2" x2="566.4" y2="38.2" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="556.4" y1="41.4" x2="563.6" y2="41.4" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="556.4" y1="45.0" x2="563.6" y2="45.0" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="556.4" y1="48.6" x2="560.4" y2="48.6" stroke="#8a8a8a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="560.0" y="65.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#666666" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">5.  Report</text>
+<circle cx="662.0" cy="37.0" r="3.4" fill="none" stroke="#8a8a8a" stroke-width="1.6"/>
+<path d="M657.2,50.6 C657.2,43.4 654.4,45.4 664.0,41.8 C673.6,45.4 670.8,43.4 670.8,50.6 Z" fill="none" stroke="#8a8a8a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="666.0,44.2 668.8,47.4 674.0,42.6" fill="none" stroke="#8a8a8a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="664.0" y="65.0" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#666666" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">6.  Review</text>
+<line x1="8.0" y1="74.2" x2="712.0" y2="74.2" stroke="#cccccc" stroke-width="1.0"/>
+<circle cx="44.4" cy="91.0" r="3.8" fill="none" stroke="#9a9a9a" stroke-width="1.6"/>
+<path d="M38.4,105.8 C38.4,98.2 40.8,96.2 45.2,96.2 C49.6,96.2 52.0,98.2 52.0,105.8" fill="none" stroke="#9a9a9a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="54.4" cy="93.8" r="4.0" fill="none" stroke="#9a9a9a" stroke-width="1.6"/>
+<line x1="57.2" y1="96.6" x2="60.8" y2="100.2" stroke="#9a9a9a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="48.0" y="126.2" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Traditional</text>
+<text x="48.0" y="139.8" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#666666" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">manual, per signal</text>
+<rect x="97.8" y="95.0" width="92.4" height="48.0" rx="4" ry="4" fill="#f5f5f5" stroke="#9a9a9a" stroke-width="0.8"/>
+<text x="144.0" y="109.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Manual lookup</text>
+<text x="144.0" y="123.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">A2L + sheets</text>
+<text x="144.0" y="136.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">unordered</text>
+<rect x="201.8" y="95.0" width="92.4" height="48.0" rx="4" ry="4" fill="#f5f5f5" stroke="#9a9a9a" stroke-width="0.8"/>
+<text x="248.0" y="109.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Name reading</text>
+<text x="248.0" y="123.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">strings only</text>
+<text x="248.0" y="136.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">unscored</text>
+<rect x="305.8" y="95.0" width="92.4" height="48.0" rx="4" ry="4" fill="#f5f5f5" stroke="#9a9a9a" stroke-width="0.8"/>
+<text x="352.0" y="109.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Implicit rule</text>
+<text x="352.0" y="123.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">unit &amp; type</text>
+<text x="352.0" y="136.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">unrecorded</text>
+<rect x="409.8" y="95.0" width="92.4" height="48.0" rx="4" ry="4" fill="#f5f5f5" stroke="#9a9a9a" stroke-width="0.8"/>
+<text x="456.0" y="109.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Each signal</text>
+<text x="456.0" y="123.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">accept / redo</text>
+<text x="456.0" y="136.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">no rubric</text>
+<rect x="513.8" y="95.0" width="92.4" height="48.0" rx="4" ry="4" fill="#f5f5f5" stroke="#9a9a9a" stroke-width="0.8"/>
+<text x="560.0" y="109.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Sheet log</text>
+<text x="560.0" y="123.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">hand-kept</text>
+<text x="560.0" y="136.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">post hoc</text>
+<rect x="617.8" y="95.0" width="92.4" height="48.0" rx="4" ry="4" fill="#f5f5f5" stroke="#9a9a9a" stroke-width="0.8"/>
+<text x="664.0" y="109.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Full sign-off</text>
+<text x="664.0" y="123.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">every signal</text>
+<text x="664.0" y="136.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#333333" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">serial queue</text>
+<line x1="190.2" y1="119.0" x2="201.8" y2="119.0" stroke="#9a9a9a" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="294.2" y1="119.0" x2="305.8" y2="119.0" stroke="#9a9a9a" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="398.2" y1="119.0" x2="409.8" y2="119.0" stroke="#9a9a9a" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="502.2" y1="119.0" x2="513.8" y2="119.0" stroke="#9a9a9a" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="606.2" y1="119.0" x2="617.8" y2="119.0" stroke="#9a9a9a" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="8.0" y1="157.0" x2="712.0" y2="157.0" stroke="#cccccc" stroke-width="1.0"/>
+<line x1="48.0" y1="165.3" x2="48.0" y2="162.8" stroke="#4a7ebb" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="48.0" cy="160.7" r="1.4" fill="none" stroke="#4a7ebb" stroke-width="1.6"/>
+<rect x="42.6" y="165.3" width="10.9" height="6.4" fill="none" stroke="#4a7ebb" stroke-width="1.6"/>
+<circle cx="45.3" cy="168.5" r="1.0" fill="none" stroke="#4a7ebb" stroke-width="1.6"/>
+<circle cx="50.7" cy="168.5" r="1.0" fill="none" stroke="#4a7ebb" stroke-width="1.6"/>
+<line x1="45.8" y1="170.4" x2="50.2" y2="170.4" stroke="#4a7ebb" stroke-width="1.6" stroke-linecap="round"/>
+<polyline points="41.3,171.7 41.3,180.7 54.7,180.7 54.7,171.7" fill="none" stroke="#4a7ebb" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="41.3" y1="173.0" x2="37.8" y2="176.8" stroke="#4a7ebb" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="54.7" y1="173.0" x2="58.2" y2="176.8" stroke="#4a7ebb" stroke-width="1.6" stroke-linecap="round"/>
+<text x="48.0" y="202.2" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#2a5fa8" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">A2L-RAGAlign</text>
+<text x="48.0" y="215.8" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">(Ours), automatic</text>
+<rect x="97.8" y="175.0" width="92.4" height="48.0" rx="4" ry="4" fill="#eef4fc" stroke="#4a7ebb" stroke-width="0.8"/>
+<text x="144.0" y="189.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Query decomp.</text>
+<text x="144.0" y="203.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">name, type, I/O</text>
+<text x="144.0" y="216.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">structured</text>
+<rect x="201.8" y="175.0" width="92.4" height="48.0" rx="4" ry="4" fill="#dfeaf9" stroke="#2a5fa8" stroke-width="0.8"/>
+<text x="248.0" y="189.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">RAG fusion</text>
+<text x="248.0" y="203.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">3 chan. fused</text>
+<text x="248.0" y="216.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">ranked, scored</text>
+<rect x="305.8" y="175.0" width="92.4" height="48.0" rx="4" ry="4" fill="#eef4fc" stroke="#4a7ebb" stroke-width="0.8"/>
+<text x="352.0" y="189.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Post-fusion</text>
+<text x="352.0" y="203.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">IO + type check</text>
+<text x="352.0" y="216.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">conflict cap</text>
+<rect x="409.8" y="175.0" width="92.4" height="48.0" rx="4" ry="4" fill="#eef4fc" stroke="#4a7ebb" stroke-width="0.8"/>
+<text x="456.0" y="189.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Tier routing</text>
+<text x="456.0" y="203.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">auto / human</text>
+<text x="456.0" y="216.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">calibrated</text>
+<rect x="513.8" y="175.0" width="92.4" height="48.0" rx="4" ry="4" fill="#eef4fc" stroke="#4a7ebb" stroke-width="0.8"/>
+<text x="560.0" y="189.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Align. report</text>
+<text x="560.0" y="203.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">query-level</text>
+<text x="560.0" y="216.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">reproducible</text>
+<rect x="617.8" y="175.0" width="92.4" height="48.0" rx="4" ry="4" fill="#eef4fc" stroke="#4a7ebb" stroke-width="0.8"/>
+<text x="664.0" y="189.9" font-size="11.3" font-weight="bold" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">Targeted rev.</text>
+<text x="664.0" y="203.3" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">ambiguous only</text>
+<text x="664.0" y="216.7" font-size="11.3" font-weight="normal" text-anchor="middle" fill="#1a1a1a" font-family="Times New Roman, Liberation Serif, Nimbus Roman, serif">auditable</text>
+<line x1="190.2" y1="199.0" x2="201.8" y2="199.0" stroke="#4a7ebb" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="294.2" y1="199.0" x2="305.8" y2="199.0" stroke="#4a7ebb" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="398.2" y1="199.0" x2="409.8" y2="199.0" stroke="#4a7ebb" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="502.2" y1="199.0" x2="513.8" y2="199.0" stroke="#4a7ebb" stroke-width="1.0" marker-end="url(#ah)"/>
+<line x1="606.2" y1="199.0" x2="617.8" y2="199.0" stroke="#4a7ebb" stroke-width="1.0" marker-end="url(#ah)"/>
+</svg>

@@ -1,0 +1,18 @@
+\begin{table}[t]
+\caption{Case study: per-channel evidence and fused score ($s_r$=retrieval, $s_t$=token, $s_s$=structure, $s$=fused).}
+\label{tab:casestudy}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llllrrrl}
+\toprule
+Query & Best match & Tier & $s_r$ & $s_t$ & $s_s$ & $s$ & Note \\
+\midrule
+\texttt{EngineIdlerpm} & \texttt{Eng\_IdleRpm\_u8\_C} & AUTO & 0.68 & 0.00 & 0.00 & 0.46 & multi-hop rename \\
+\texttt{AdvMotstSpd} & \texttt{Adv\_MotSt\_Speed\_M} & SUGGEST & 0.55 & 0.17 & 0.00 & 0.42 & multi-hop rename (low score) \\
+\texttt{Eng\_IdleRpm\_u8\_M} & \texttt{Eng\_IdleRpm\_u8\_C} & SUGGEST & 0.79 & 1.00 & -0.10 & 0.47 & IO-flip confusable (penalized) \\
+\texttt{Eng\_IdleRpm\_u16\_C} & \texttt{Eng\_IdleRpm\_u8\_C} & SUGGEST & 0.76 & 1.00 & 0.10 & 0.46 & type-flip confusable (penalized) \\
+\texttt{Trn\_Soc\_u16\_C} & \texttt{Bat\_SOC\_u8\_M} & MANUAL & 0.38 & 0.33 & -0.70 & 0.20 & non-existent signal \\
+\bottomrule
+\end{tabular}
+\end{table}

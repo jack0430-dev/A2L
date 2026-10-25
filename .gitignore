@@ -1,0 +1,99 @@
+# ── 打包产物 ────────────────────────────────────────────────────────────────
+build/
+dist/
+*.manifest
+*.spec.bak
+pyinstaller_v*.log
+
+# ── Python 缓存 / 字节码 ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# ── 虚拟环境 ────────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── IDE / 编辑器 ────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── 本地临时脚本与调试产物（工作区里的一次性脚本，不应进版本库）────────────
+/_*
+paper/figures/_*.py
+paper/figures/_*.tex
+
+# ── 实验中间产物（论文数据由 experiments/run_experiments.py 重新生成）────────
+experiments/results/results.json.bak*
+experiments/results_rerun_*.json
+experiments/figures/
+paper/figures/_*.pdf
+paper/figures/_*.log
+paper/figures/_*.aux
+
+# ── 插图的栅格预览（脚本每次运行都会重写，正式版是矢量 PDF）─────────────────
+paper/figures/overview.png
+paper/figures/results.png
+paper/figures/thresholds.png
+paper/figures/*_preview.png
+
+# ── 论文 LaTeX 中间文件 ────────────────────────────────────────────────────
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.toc
+paper/*.synctex.gz
+# tectonic 会把 IEEEtran.cls 等宏包下载到论文目录，可重新获取
+paper/*.cls
+paper/figures/_*
+paper/_build/
+# paper/_tools/ 是本地 LaTeX 工具链缓存（tectonic + 宏包），体积大且可重新下载
+paper/_tools/
+
+# ── 运行时产物 / 日志 / 临时文件 ───────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.old
+~$*
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ── 生成出来的 A2L（正本在 data/，这里的都是跑出来的副本）──────────────────
+/A2lHeader*.a2l
+data/**/*_updated.a2l
+*.a2l.log
+*_match_report.txt
+*_version_diff.txt
+
+# ── 本地私有固件与配置 ─────────────────────────────────────────────────────
+# data/TcuBsw.axf 是随本仓库公开分发的真实 ECU 固件（ELF32/ARM，SHA-256
+# e5af27f9d968993f35245146f10640ebd55cb48316cd9bf24bde39aa7dd54fc3），
+# 用于复现论文中的生产规模统计，**不要**用下面的规则排除它。
+# 其余未在仓库中跟踪的固件/地址文件仍按私有数据处理：
+/data/*.elf
+/data/*.bin
+/data/*.out
+/data/*.hex
+/data/*.map
+signal_keep_config.xlsx
+config.local.*
+.env
+.env.*
+*.ini.local

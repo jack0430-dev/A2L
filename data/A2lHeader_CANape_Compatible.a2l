@@ -1,0 +1,118 @@
+ASAP2_VERSION 1 60
+/begin PROJECT A2L_Project ""
+  /begin HEADER
+    "Portable A2L header"
+    VERSION "1.0"
+    PROJECT_NO "AUTO"
+  /end HEADER
+
+  /begin MODULE MODULE_001 ""
+    /begin MOD_COMMON ""
+      BYTE_ORDER MSB_LAST
+      ALIGNMENT_BYTE 1
+      ALIGNMENT_WORD 2
+      ALIGNMENT_LONG 4
+      ALIGNMENT_FLOAT32_IEEE 4
+      ALIGNMENT_FLOAT64_IEEE 8
+    /end MOD_COMMON
+
+    /* ============== RECORD_LAYOUT definitions ============== */
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES 1 UBYTE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_SBYTE
+      FNC_VALUES 1 SBYTE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES 1 UWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES 1 ULONG ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_SLONG
+      FNC_VALUES 1 SLONG ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /* ============== COMPU_METHOD definitions ============== */
+    /begin COMPU_METHOD CM_uint8
+      "uint8 conversion"
+      LINEAR
+      "%3d"
+      ""
+      COEFFS_LINEAR 1 0
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD CM_int8
+      "int8 conversion"
+      LINEAR
+      "%3d"
+      ""
+      COEFFS_LINEAR 1 0
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD CM_uint16
+      "uint16 conversion"
+      LINEAR
+      "%5d"
+      ""
+      COEFFS_LINEAR 1 0
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD CM_int16
+      "int16 conversion"
+      LINEAR
+      "%5d"
+      ""
+      COEFFS_LINEAR 1 0
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD CM_uint32
+      "uint32 conversion"
+      LINEAR
+      "%10d"
+      ""
+      COEFFS_LINEAR 1 0
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD CM_int32
+      "int32 conversion"
+      LINEAR
+      "%10d"
+      ""
+      COEFFS_LINEAR 1 0
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD CM_single
+      "float32 IEEE conversion"
+      LINEAR
+      "%6.3f"
+      ""
+      COEFFS_LINEAR 1 0
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD CM_double
+      "float64 IEEE conversion"
+      LINEAR
+      "%10.6f"
+      ""
+      COEFFS_LINEAR 1 0
+    /end COMPU_METHOD
+
+  /end MODULE
+/end PROJECT

@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Error taxonomy of a drifted measurement contract, with the measured detection rate of each class and the layer that owns it (Check = alignment contract check, Consist.\ = incremental consistency check).}
+\label{tab:contract}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{1.5cm}
+                >{\raggedright\arraybackslash}p{2.2cm}
+                >{\raggedright\arraybackslash}p{2.3cm}
+                >{\raggedright\arraybackslash}p{1.55cm}}
+\toprule
+Drift class & At the target & Consequence & Owner \\
+\midrule
+Class flip & exposed as MEAS & master writes const. & Check (100.0\%) \\
+Type-family & layout no longer fits & decodes to another & Check (100.0\%) \\
+Bit-layout & mask stops isolating & contaminated $2^{w}-2^{b}$ & Consist.\ (100.0\%) \\
+Scaling loss & raw count, wrong $k$ & value off by $6\times$ & Consist.\ (100.0\%) \\
+Duplicate & two objects, one var & master reads stale & Consist.\ (100.0\%) \\
+Orphan & object vanishes & stale entry kept & Consist.\ (100.0\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

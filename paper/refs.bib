@@ -1,0 +1,241 @@
+% refs.bib — 参考文献库
+% 2026-10 逐条核实（作者/标题/卷期页码/年份/版本号/标准现行状态），
+% 每条的依据见 comment 行；无法验证的条目已删除或替换。
+% 标题整体用一层花括号包裹（title = {{...}}），避免 IEEEtran 的 title-case
+% 转换改动正式标题的专名大小写；组内不再嵌套花括号。
+
+@inproceedings{lewis2020rag,
+  author    = {Patrick Lewis and others},
+  title     = {{Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks}},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {33},
+  pages     = {9459--9474},
+  publisher = {Curran Associates, Inc.},
+  year      = {2020}
+}
+
+@article{gao2023ragsurvey,
+  author  = {Yunfan Gao and others},
+  title   = {{Retrieval-Augmented Generation for Large Language Models: A Survey}},
+  journal = {arXiv preprint arXiv:2312.10997},
+  year    = {2023},
+  url     = {https://arxiv.org/abs/2312.10997}
+}
+
+% DOI 10.1145/3695988; TOSEM 33(8):1-79
+@article{hou2024llm4se,
+  author  = {Xinyi Hou and others},
+  title   = {{Large Language Models for Software Engineering: A Systematic Literature Review}},
+  journal = {ACM Transactions on Software Engineering and Methodology (TOSEM)},
+  volume  = {33},
+  number  = {8},
+  pages   = {1--79},
+  year    = {2024},
+  doi     = {10.1145/3695988}
+}
+
+% DOI 10.1109/icse-fose59343.2023.00008; ICSE-FoSE 2023, pp. 31-53
+@inproceedings{fan2023llm4se,
+  author    = {Angela Fan and others},
+  title     = {{Large Language Models for Software Engineering: Survey and Open Problems}},
+  booktitle = {Proc. IEEE/ACM International Conference on Software Engineering: Future of Software Engineering (ICSE-FoSE)},
+  pages     = {31--53},
+  year      = {2023},
+  doi       = {10.1109/icse-fose59343.2023.00008}
+}
+
+% ACL Anthology D19-1410; DOI 10.18653/v1/D19-1410; 页码以 ACL Anthology 为准
+@inproceedings{reimers2019sbert,
+  author    = {Nils Reimers and Iryna Gurevych},
+  title     = {{Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks}},
+  booktitle = {Proc. 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages     = {3982--3992},
+  publisher = {Association for Computational Linguistics},
+  year      = {2019},
+  doi       = {10.18653/v1/D19-1410},
+  url       = {https://aclanthology.org/D19-1410/}
+}
+
+% DOI 10.1145/3180155.3180167; ICSE 2018, pp. 933-944
+@inproceedings{gu2018codesearch,
+  author    = {Xiaodong Gu and Hongyu Zhang and Sunghun Kim},
+  title     = {{Deep Code Search}},
+  booktitle = {Proc. 40th ACM/IEEE International Conference on Software Engineering (ICSE)},
+  pages     = {933--944},
+  year      = {2018},
+  doi       = {10.1145/3180155.3180167}
+}
+
+% The VLDB Journal 10(4):334-350, 2001
+@article{rahm2001schema,
+  author  = {Erhard Rahm and Philip A. Bernstein},
+  title   = {{A Survey of Approaches to Automatic Schema Matching}},
+  journal = {The VLDB Journal},
+  volume  = {10},
+  number  = {4},
+  pages   = {334--350},
+  year    = {2001}
+}
+
+% DOI 10.1109/ICPC.2006.51; ICPC 2006, pp. 3-12
+@inproceedings{lawrie2006identifiers,
+  author    = {Dawn Lawrie and Christopher Morrell and Henry Feild and David Binkley},
+  title     = {{What's in a Name? A Study of Identifiers}},
+  booktitle = {Proc. 14th IEEE International Conference on Program Comprehension (ICPC)},
+  pages     = {3--12},
+  year      = {2006},
+  doi       = {10.1109/ICPC.2006.51}
+}
+
+% DOI 10.1109/ICPC.2009.5090039; ICPC 2009, pp. 158-167
+% 第二作者为 Marcia Davis（原误作 Matthew Davis）
+@inproceedings{binkley2009camelcase,
+  author    = {David W. Binkley and Marcia Davis and Dawn J. Lawrie and Christopher Morrell},
+  title     = {{To CamelCase or Under\_Score}},
+  booktitle = {Proc. IEEE International Conference on Program Comprehension (ICPC)},
+  pages     = {158--167},
+  year      = {2009},
+  doi       = {10.1109/ICPC.2009.5090039}
+}
+
+@article{levenshtein1966,
+  author  = {Vladimir I. Levenshtein},
+  title   = {{Binary Codes Capable of Correcting Deletions, Insertions, and Reversals}},
+  journal = {Soviet Physics Doklady},
+  volume  = {10},
+  number  = {8},
+  pages   = {707--710},
+  year    = {1966}
+}
+
+% 期刊版：Foundations and Trends in Information Retrieval 3(4):333-389, 2009,
+% DOI 10.1561/1500000019（ACM DL、DBLP、Google Scholar、Now Publishers 以及该
+% 刊 PDF 自身的卷期页眉均以此 DOI 指向本卷期，故卷期页码按 3(4):333-389 著录）。
+% 注意：Crossref / OpenAlex 中该 DOI 的记录被出版方改写为同题 monograph 版
+% 4(1-2):1-174，那是同一内容的单行本重印，不是另一篇论文。
+@article{robertson2009bm25,
+  author  = {Stephen Robertson and Hugo Zaragoza},
+  title   = {{The Probabilistic Relevance Framework: {BM25} and Beyond}},
+  journal = {Foundations and Trends in Information Retrieval},
+  volume  = {3},
+  number  = {4},
+  pages   = {333--389},
+  year    = {2009}
+}
+
+% ---- 标准类：版本号与现行状态均以发布机构官网为准（2026-10 核）----
+
+% ASAM MCD-2MC (ASAP2) 现行版 1.7.1，发布 2018-01-30
+% 官方题名见封面 "ASAM MCD-2MC (ASAP2), Version 1.7.1: Data Model for ECU
+% Measurement and Calibration"；ASAM 官网数据表另称其为
+% "ECU Measurement and Calibration Data Exchange Format"，同一文档。
+% 不设 howpublished：机构名已在 author 中，再写一次会在正文里重复著录。
+@misc{asam2018mcd2mc,
+  author       = {{ASAM e.V.}},
+  title        = {{ASAM MCD-2MC (ASAP2), Version 1.7.1: Data Model for ECU Measurement and Calibration}},
+  year         = {2018},
+  note         = {{Version} 1.7.1, released 2018-01-30},
+  url          = {https://www.asam.net/standards/detail/mcd-2-mc/}
+}
+
+% ASAM MCD-1 XCP 现行版 1.5.0，发布 2017-11-30
+@misc{asam2017xcp,
+  author       = {{ASAM e.V.}},
+  title        = {{ASAM MCD-1 XCP, Version 1.5.0: Universal Measurement and Calibration Protocol}},
+  year         = {2017},
+  note         = {{Version} 1.5.0, released 2017-11-30},
+  url          = {https://www.asam.net/standards/detail/mcd-1-xcp/}
+}
+
+% ASAM MDF 现行版 4.3.0，发布 2025-09-23
+@misc{asam2025mdf,
+  author       = {{ASAM e.V.}},
+  title        = {{ASAM MDF: Measurement Data Format, Specification of the Measurement Data Format Used by Calibration and Analysis Tools}},
+  year         = {2025},
+  note         = {{Version} 4.3.0, released 2025-09-23},
+  url          = {https://www.asam.net/standards/detail/mdf/}
+}
+
+% DWARF 5 于 2017-02-13 定稿；DWARF 6 截至核稿时仍为草案
+% （dwarfstd.org 的 Version 6 快照封面仍标注 WORKING DRAFT）
+@misc{dwarf2017dwarf5,
+  author       = {{DWARF Committee}},
+  title        = {{DWARF Debugging Information Format, Version 5}},
+  year         = {2017},
+  note         = {Approved 2017-02-13; DWARF 6 is still a draft},
+  url          = {https://dwarfstd.org/}
+}
+
+% ISO 26262-1:2018（Edition 2, 2018-12）；正文引用的"第 1 部分 词汇"即此版
+@misc{iso26262,
+  author       = {{International Organization for Standardization}},
+  title        = {{ISO 26262-1:2018: Road Vehicles -- Functional Safety -- Part 1: Vocabulary}},
+  howpublished = {ISO Standard},
+  year         = {2018},
+  note         = {Edition 2, published 2018-12}
+}
+
+% ISO 14229-1:2026（Edition 4, 2026-06）为现行版；2020 版已撤销
+@misc{iso14229,
+  author       = {{International Organization for Standardization}},
+  title        = {{ISO 14229-1:2026: Road Vehicles -- Unified Diagnostic Services (UDS) -- Part 1: Application Layer}},
+  howpublished = {ISO Standard},
+  year         = {2026},
+  note         = {Edition 4, published 2026-06; supersedes the withdrawn ISO 14229-1:2020}
+}
+
+% ISO 11898-1:2024（Edition 3, 2024-05）为现行版；2015 版已撤销
+@misc{iso11898,
+  author       = {{International Organization for Standardization}},
+  title        = {{ISO 11898-1:2024: Road Vehicles -- Controller Area Network (CAN) -- Part 1: Data Link Layer and Physical Coding Sublayer}},
+  howpublished = {ISO Standard},
+  year         = {2024},
+  note         = {Edition 3, published 2024-05; supersedes the withdrawn ISO 11898-1:2015}
+}
+
+% AUTOSAR Classic R4.4.0 首次发布 2018-10-31
+% 依据：autosar.org 的 "Classic Platform Release Overview"（Initial release
+% 2018-10-31）。不设 howpublished：机构名已在 author 中。
+@misc{autosar2018overview,
+  author       = {{AUTOSAR Consortium}},
+  title        = {{AUTOSAR Technical Overview}},
+  year         = {2018},
+  note         = {{Release} R4.4.0, released 2018-10-31},
+  url          = {https://www.autosar.org/standards/classic-platform/}
+}
+
+% ---- 检索与嵌入类 ----
+
+% ACL Anthology 2020.emnlp-main.550; DOI 10.18653/v1/2020.emnlp-main.550
+@inproceedings{karpukhin2020,
+  author    = {Vladimir Karpukhin and others},
+  title     = {{Dense Passage Retrieval for Open-Domain Question Answering}},
+  booktitle = {Proc. 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages     = {6769--6781},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  doi       = {10.18653/v1/2020.emnlp-main.550},
+  url       = {https://aclanthology.org/2020.emnlp-main.550/}
+}
+
+@article{jaccard1901,
+  author  = {Paul Jaccard},
+  title   = {{\'E}tude comparative de la distribution florale dans une portion des {Alpes} et du {Jura}},
+  journal = {Bulletin de la Soci{\'e}t{\'e} Vaudoise des Sciences Naturelles},
+  volume  = {37},
+  pages   = {547--579},
+  year    = {1901}
+}
+
+% 字符串相似度基线的可核查替代（原 McVeigh 1996 条目在 Crossref/DBLP/ACL 等源均无记录）
+% DOI 10.1109/MIS.2003.1234765; IEEE Intelligent Systems 18(5):16-23, 2003
+@article{bilenko2003adaptive,
+  author  = {M. Bilenko and R. Mooney and W. Cohen and P. Ravikumar and S. Fienberg},
+  title   = {{Adaptive Name Matching in Information Integration}},
+  journal = {IEEE Intelligent Systems},
+  volume  = {18},
+  number  = {5},
+  pages   = {16--23},
+  year    = {2003},
+  doi     = {10.1109/MIS.2003.1234765}
+}

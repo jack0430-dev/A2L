@@ -1,0 +1,21 @@
+\begin{table}[t]
+\caption{Confidence-tier distribution on the test split (N=314 queries, 60 distractors; calibrated $\tau_{auto}$=0.45, $\tau_{suggest}$=0.3).}
+\label{tab:tiers}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcc}
+\toprule
+Tier & Count & Share (\%) \\
+\midrule
+AUTO & 294 & 93.6 \\
+SUGGEST & 19 & 6.1 \\
+MANUAL & 1 & 0.3 \\
+\midrule
+Auto precision & \multicolumn{2}{c}{99.3} \\
+Confirmations per query & \multicolumn{2}{c}{0.033} \\
+Workload reduction vs exact & \multicolumn{2}{c}{96.7} \\
+Distractor false auto-accept & \multicolumn{2}{c}{1 of 60 (1.7)} \\
+\bottomrule
+\end{tabular}
+\end{table}

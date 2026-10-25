@@ -1,0 +1,19 @@
+# A2L Update Tool — runtime dependencies
+#
+# Install:  py -m pip install -r requirements.txt
+# Tested with Python 3.10–3.12 (Windows 10/11, Linux CI)
+
+# ── GUI ─────────────────────────────────────────────────────────────────────
+PyQt5>=5.15.0,<6.0
+# PyQt5-Qt5 and PyQt5-sip are pulled in automatically by PyQt5.
+
+# ── Address-file / debug-info parsing ──────────────────────────────────────
+# DWARF .debug_info / .debug_abbrev reader used to recover calibration and
+# measurement object types, enumerations, struct members and array shapes.
+pyelftools>=0.29,<0.32
+
+# ── XLSX round-trip (signal selection / address-range configuration) ───────
+openpyxl>=3.1.0,<4.0
+
+# ── Optional: plotting utilities used by the paper figures ─────────────────
+# matplotlib>=3.7,<4.0

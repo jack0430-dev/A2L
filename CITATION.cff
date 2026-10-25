@@ -1,0 +1,34 @@
+﻿cff-version: 1.2.0
+title: "A2L Update Tool: retrieval-augmented semantic alignment for automotive ECU calibration description updates"
+message: "If you use this tool, the A2L-RAGAlign method, or the accompanying ISCAS 2027 submission, please cite it as below."
+type: software
+authors:
+  - family-names: "Wang"
+    given-names: "Wei"
+    affiliation: "East China Normal University"
+  - family-names: "Du"
+    given-names: "Dehui"
+    affiliation: "East China Normal University"
+repository-code: "https://github.com/jack0430-dev/A2L-RAGAlign_2026"
+url: "https://github.com/jack0430-dev/A2L-RAGAlign_2026"
+abstract: >-
+  Automated regeneration of ASAM MCD-2A A2L description files from binary
+  address files (AXF/ELF/MAP), with retrieval-augmented semantic alignment
+  (A2L-RAGAlign) for calibration and measurement description updates.
+  The tool recovers object types, enumerations, struct members and array
+  shapes from DWARF, preserves the user's original A2L header byte-for-byte,
+  and emits per-signal evidence so that unmatched signals are visible rather
+  than silent. The whole pipeline is available headless for CI and
+  reproducible experiments.
+keywords:
+  - A2L
+  - ASAM MCD-2A
+  - automotive calibration
+  - ECU
+  - INCA
+  - CANape
+  - DWARF
+  - retrieval-augmented generation
+  - semantic alignment
+license: MIT
+version: "2.7"

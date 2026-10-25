@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Test-split accuracy (N=314 queries, 83 signals; Hard = multi-hop, N=84); the check gates tiering. Retrieval-only and Ours share the identical ranking (the check changes the tier, not the order) and differ in Table~\ref{tab:safety}.}
+\label{tab:align}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccc}
+\toprule
+Method & Top-1 (\%) & Top-5 (\%) & MRR & Hard Top-1 \\
+\midrule
+Exact & 0.0 & 0.0 & 0.000 & -- \\
+Levenshtein & 92.4 & 98.1 & 0.946 & 78.6 \\
+Token-Jaccard & 64.3 & 74.8 & 0.675 & 33.3 \\
+BM25 (KB docs) & 96.8 & 100.0 & 0.980 & 95.2 \\
+Retrieval-only & 99.0 & 100.0 & 0.994 & 97.6 \\
+\textbf{Ours} & \textbf{99.0} & \textbf{100.0} & \textbf{0.994} & \textbf{97.6} \\
+\bottomrule
+\end{tabular}
+\end{table}

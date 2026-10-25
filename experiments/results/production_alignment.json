@@ -1,0 +1,227 @@
+{
+ "meta": {
+  "firmware": "data/TcuBsw.axf",
+  "elf_symbols": 4003,
+  "dwarf_signals": 31316,
+  "seed": 20261011,
+  "top_k": 5,
+  "queries_per_transform": 30,
+  "transforms": [
+   "lower",
+   "camel",
+   "abbrev",
+   "expand",
+   "struct_path",
+   "camel_abbrev"
+  ],
+  "hard_transforms": [
+   "camel_abbrev"
+  ],
+  "elapsed_s": 379.0
+ },
+ "forensics": {
+  "dwarf_signals": 31316,
+  "elf_symbols": 4003,
+  "unresolved_signals": 2504,
+  "unresolved_distinct_names": 580,
+  "recoverable_by_relaxation": {
+   "exact": 0,
+   "case_insensitive": 0,
+   "container": 2,
+   "token_superset": 7
+  },
+  "relaxation_examples": {
+   "container": [
+    "SpeedSense3_Active_Flag -> SpeedSense3",
+    "U_Stage_Voltage_Old -> U_Stage_Voltage"
+   ],
+   "token_superset": [
+    "Bldc_Intc_ConfigPtr -> Intc_ConfigPtr",
+    "Core1_ElectroMag_Duty -> ElectroMag_Duty",
+    "Core1_ElectroMag_Freq -> ElectroMag_Freq"
+   ]
+  },
+  "unresolved_names_present_in_generated_a2l": 0,
+  "verdict": "address-file symbol-coverage gap (the address file does not export these DWARF variables); not a naming divergence, so no alignment method can recover them"
+ },
+ "baselines_full_kb": {
+  "Exact": {
+   "top1": 0.0,
+   "top5": 0.0,
+   "mrr": 0.0,
+   "n": 180
+  },
+  "Levenshtein": {
+   "top1": 0.9055555555555556,
+   "top5": 0.95,
+   "mrr": 0.9277777777777778,
+   "n": 180
+  },
+  "Token-Jaccard": {
+   "top1": 0.7222222222222222,
+   "top5": 0.8111111111111111,
+   "mrr": 0.7573148148148148,
+   "n": 180
+  },
+  "BM25 (KB docs)": {
+   "top1": 0.8833333333333333,
+   "top5": 0.9444444444444444,
+   "mrr": 0.9103703703703704,
+   "n": 180
+  },
+  "Retrieval-only": {
+   "top1": 0.9777777777777777,
+   "top5": 0.9944444444444445,
+   "mrr": 0.9861111111111112,
+   "n": 180
+  },
+  "Ours": {
+   "top1": 0.9777777777777777,
+   "top5": 0.9944444444444445,
+   "mrr": 0.9861111111111112,
+   "n": 180
+  }
+ },
+ "by_transform": {
+  "lower": {
+   "n": 30,
+   "top1": 1.0,
+   "top5": 1.0
+  },
+  "camel": {
+   "n": 30,
+   "top1": 1.0,
+   "top5": 1.0
+  },
+  "abbrev": {
+   "n": 30,
+   "top1": 1.0,
+   "top5": 1.0
+  },
+  "expand": {
+   "n": 30,
+   "top1": 0.9,
+   "top5": 0.9666666666666667
+  },
+  "struct_path": {
+   "n": 30,
+   "top1": 1.0,
+   "top5": 1.0
+  },
+  "camel_abbrev": {
+   "n": 30,
+   "top1": 0.9666666666666667,
+   "top5": 1.0
+  }
+ },
+ "kb_scale_sweep": {
+  "83": {
+   "kb_size": 83,
+   "n_queries": 115,
+   "Ours": {
+    "top1": 1.0,
+    "top5": 1.0,
+    "mrr": 1.0,
+    "n": 115
+   },
+   "Token-only (w/o retrieval)": {
+    "top1": 0.8173913043478261,
+    "top5": 0.9217391304347826,
+    "mrr": 0.8563768115942029,
+    "n": 115
+   },
+   "retrieval_gain_top1": 0.18260869565217386,
+   "tiers": {
+    "distribution": {
+     "AUTO": 115,
+     "SUGGEST": 0,
+     "MANUAL": 0
+    },
+    "auto_coverage": 1.0,
+    "auto_precision": 1.0
+   },
+   "elapsed_s": 0.7
+  },
+  "250": {
+   "kb_size": 250,
+   "n_queries": 158,
+   "Ours": {
+    "top1": 1.0,
+    "top5": 1.0,
+    "mrr": 1.0,
+    "n": 158
+   },
+   "Token-only (w/o retrieval)": {
+    "top1": 0.8164556962025317,
+    "top5": 0.9050632911392406,
+    "mrr": 0.8528481012658228,
+    "n": 158
+   },
+   "retrieval_gain_top1": 0.18354430379746833,
+   "tiers": {
+    "distribution": {
+     "AUTO": 157,
+     "SUGGEST": 1,
+     "MANUAL": 0
+    },
+    "auto_coverage": 0.9936708860759493,
+    "auto_precision": 1.0
+   },
+   "elapsed_s": 3.0
+  },
+  "1000": {
+   "kb_size": 1000,
+   "n_queries": 176,
+   "Ours": {
+    "top1": 0.9943181818181818,
+    "top5": 1.0,
+    "mrr": 0.9971590909090909,
+    "n": 176
+   },
+   "Token-only (w/o retrieval)": {
+    "top1": 0.75,
+    "top5": 0.8125,
+    "mrr": 0.777935606060606,
+    "n": 176
+   },
+   "retrieval_gain_top1": 0.24431818181818177,
+   "tiers": {
+    "distribution": {
+     "AUTO": 175,
+     "SUGGEST": 1,
+     "MANUAL": 0
+    },
+    "auto_coverage": 0.9943181818181818,
+    "auto_precision": 0.9942857142857143
+   },
+   "elapsed_s": 13.5
+  },
+  "4003": {
+   "kb_size": 4003,
+   "n_queries": 180,
+   "Ours": {
+    "top1": 0.9777777777777777,
+    "top5": 0.9944444444444445,
+    "mrr": 0.9861111111111112,
+    "n": 180
+   },
+   "Token-only (w/o retrieval)": {
+    "top1": 0.7222222222222222,
+    "top5": 0.8,
+    "mrr": 0.7512962962962964,
+    "n": 180
+   },
+   "retrieval_gain_top1": 0.25555555555555554,
+   "tiers": {
+    "distribution": {
+     "AUTO": 179,
+     "SUGGEST": 1,
+     "MANUAL": 0
+    },
+    "auto_coverage": 0.9944444444444445,
+    "auto_precision": 0.9832402234636871
+   },
+   "elapsed_s": 54.4
+  }
+ }
+}
