@@ -646,11 +646,18 @@ class DomainKnowledgeBase:
 # 长/短形式 C 类型 -> 统一短形式族（u8/u16/f32/...），供类型一致性判定
 _LONG_TO_SHORT = {"uint8": "u8", "uint16": "u16", "uint32": "u32", "uint64": "u64",
                   "int8": "i8", "int16": "i16", "int32": "i32", "int64": "i64",
-                  "float": "f32", "double": "f64", "bool": "b"}
+                  "float": "f32", "double": "f64", "bool": "b",
+                  # 嵌入式工具链短别名 typedef（HighTec/AURIX 等）：DWARF 名或
+                  # Excel DataType 列里会原样出现，缺了会把有符号比成无符号
+                  "u8": "u8", "uint": "u32", "uin8": "u8", "uin16": "u16", "uin32": "u32",
+                  "i8": "i8", "i16": "i16", "i32": "i32", "i64": "i64",
+                  "s8": "i8", "s16": "i16", "s32": "i32", "s64": "i64",
+                  "sint8": "i8", "sint16": "i16", "sint32": "i32", "sint64": "i64",
+                  "sin8": "i8", "sin16": "i16", "sin32": "i32", "sin64": "i64"}
 
 
 def _normalize_c_type(t: str) -> str:
-    """C 类型归一化: 'uint16_t'/'u16'/'uint16' -> 'u16'。"""
+    """C 类型归一化: 'uint16_t'/'u16'/'uint16'/'sint16'/'sin16' -> 'i16' 类短名。"""
     t = (t or "").strip().lower()
     t = re.sub(r"_t$", "", t)
     return _LONG_TO_SHORT.get(t, t)

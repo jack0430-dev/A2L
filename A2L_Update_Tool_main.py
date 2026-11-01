@@ -419,25 +419,34 @@ PREVIEW_EDITABLE_COLS = [col for col in XLSX_COLS if col not in PREVIEW_READONLY
 ADDRESS_RANGE_XLSX_COLS = ["ObjectType", "Start", "End"]
 
 # C 数据类型 → A2L DATATYPE（支持标准C/嵌入式固定宽度类型/枚举/数组/结构体成员）
+# 另含嵌入式工具链短别名 typedef（HighTec/AURIX 的 sint16、部分项目的
+# sin16 / s16 / u16）：这些名字会原样出现在 DWARF DW_AT_name 或 Excel
+# DataType 列里，缺了就会被兜底成 UWORD。
 C_DTYPE_MAP = {
     # uint8
     "uint8_t":  "UBYTE",  "uint8":   "UBYTE",  "UBYTE":  "UBYTE",
     "unsigned char": "UBYTE",
+    "u8": "UBYTE",  "uint8":  "UBYTE",
     # int8
     "int8_t":   "SBYTE",  "int8":    "SBYTE",  "SBYTE":  "SBYTE",
     "signed char":   "SBYTE",  "char": "SBYTE",
+    "s8": "SBYTE",  "sint8":  "SBYTE",  "sin8":   "SBYTE",
     # uint16
     "uint16_t": "UWORD",  "uint16":  "UWORD",  "UWORD":  "UWORD",
     "unsigned short": "UWORD",
+    "u16": "UWORD",  "uin16":  "UWORD",
     # int16
     "int16_t":  "SWORD",  "int16":   "SWORD",  "SWORD":  "SWORD",
     "short": "SWORD",  "signed short": "SWORD",
+    "s16": "SWORD",  "sint16": "SWORD",  "sin16":  "SWORD",
     # uint32
     "uint32_t": "ULONG",  "uint32":  "ULONG",  "ULONG":  "ULONG",
     "unsigned int":  "ULONG",  "unsigned long": "ULONG",
+    "u32": "ULONG",  "uin32":  "ULONG",
     # int32
     "int32_t":  "SLONG",  "int32":   "SLONG",  "SLONG":  "SLONG",
     "int": "SLONG",  "signed int": "SLONG",  "long": "SLONG",
+    "s32": "SLONG",  "sint32": "SLONG",  "sin32":  "SLONG",
     # uint64  → A2L 用 A_UINT64（部分工具支持）
     "uint64_t": "A_UINT64", "uint64": "A_UINT64", "A_UINT64": "A_UINT64",
     "unsigned long long": "A_UINT64",
@@ -2357,6 +2366,18 @@ def _infer_kind_from_c_type(c_type: str, size_hint: int = 0) -> str:
     norm = _collapse_ws(c_type).replace(" *", "*")
     if "*" in norm:
         return "ptr"
+    # 嵌入式工具链常用短别名 typedef（HighTec/AURIX: sint16，部分项目: sin16、
+    # u16/s16 这类后缀名）。DWARF 的 DW_AT_name 常直接就是这些别名而非标准
+    # C 名；先按名称归一，未命中再退回按字节宽度猜（宽度无法区分有无符号，
+    # 会把 sint16 猜成 u16 -> UWORD，即用户报告的 bug）。
+    lowered = norm.lower().lstrip("_")
+    m = re.fullmatch(r"(?:u|s|sin|uin|sint|uint)(\d{1,2})", lowered)
+    if m:
+        bits = int(m.group(1))
+        if bits in (8, 16, 32, 64):
+            signed = lowered.startswith(("s", "i"))
+            return {8: "i8", 16: "i16", 32: "i32", 64: "i64"}[bits] if signed \
+                else {8: "u8", 16: "u16", 32: "u32", 64: "u64"}[bits]
     mapping = {
         "uint8_t": "u8", "uint8": "u8", "unsigned char": "u8",
         "int8_t": "i8", "int8": "i8", "signed char": "i8", "char": "i8",

@@ -8,6 +8,59 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+
+class TestToolchainShortTypeAliases:
+    """嵌入式工具链短别名 typedef（HighTec/AURIX 的 sint16、部分项目的
+    sin16/s16/u16）必须映射到正确的 A2L 类型；缺了会被兜底成 UWORD
+    （用户报告：sin16 类信号被识别成 UWORD）。"""
+
+    def test_c_dtype_map_short_aliases(self):
+        import A2L_Update_Tool_main as tool
+        cases = {
+            "sin16": "SWORD", "sint16": "SWORD", "s16": "SWORD",
+            "sin32": "SLONG", "sint32": "SLONG", "s32": "SLONG",
+            "sin8": "SBYTE", "sint8": "SBYTE", "s8": "SBYTE",
+            "u16": "UWORD", "uin16": "UWORD",
+            "u32": "ULONG", "uin32": "ULONG",
+            "u8": "UBYTE",
+        }
+        for alias, expected in cases.items():
+            assert tool.C_DTYPE_MAP.get(alias) == expected, \
+                f"C_DTYPE_MAP[{alias!r}] should be {expected}"
+
+    def test_infer_kind_short_aliases(self):
+        import A2L_Update_Tool_main as tool
+        cases = {
+            "sin16": "i16", "sint16": "i16", "s16": "i16",
+            "uint16": "u16", "u16": "u16", "uin16": "u16",
+            "sint32": "i32", "s32": "i32", "uint32": "u32",
+            "sint8": "i8", "s8": "i8",
+            "sint64": "i64", "uint64": "u64",
+            "SIN16": "i16",   # 大小写不敏感
+        }
+        for name, expected in cases.items():
+            assert tool._infer_kind_from_c_type(name) == expected, \
+                f"_infer_kind_from_c_type({name!r}) should be {expected}"
+
+    def test_infer_kind_alias_with_size_fallback(self):
+        import A2L_Update_Tool_main as tool
+        # 带字节宽度的调用路径（DWARF 常见）
+        assert tool._infer_kind_from_c_type("sin16", 2) == "i16"
+        assert tool._infer_kind_from_c_type("uint16_t", 2) == "u16"
+
+    def test_infer_kind_non_numeric_names_untouched(self):
+        import A2L_Update_Tool_main as tool
+        # 非数字后缀的普通标识符不能被误判
+        assert tool._infer_kind_from_c_type("size_t", 4) == "u32"
+        assert tool._infer_kind_from_c_type("status", 4) == "u32"
+
+    def test_kind_to_dtype_raw_signed(self):
+        import A2L_Update_Tool_main as tool
+        assert tool._kind_to_dtype_raw("i16", "scalar") == "int16_t"
+        assert tool.C_DTYPE_MAP.get("int16_t") == "SWORD"
+
+
 import A2L_Update_Tool_main as a2l_module  # 2026-10: 主模块已由 A2L_Update_V1_1_ww_20260406 重命名
 
 
