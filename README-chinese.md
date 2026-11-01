@@ -72,11 +72,16 @@ Python 3.10 – 3.12。在 Windows 10/11 上开发；测试套件也可在 Linux
 py -m pip install pyinstaller
 py -m PyInstaller --noconfirm --clean A2L_Update_Tool_V2.7.spec
 py -m PyInstaller --noconfirm --clean A2L_Update_Tool_V2.7_cli.spec
+# 可选：打一个自包含的单文件 exe（见第 5 节表格）
+py -m PyInstaller --noconfirm --clean A2L_Update_Tool_V2.7_onefile.spec
 ```
 
 会产出两个变体：`dist/A2L_Update_Tool_V2.7/`（图形界面版）与
 `dist/A2L_Update_Tool_V2.7_cli/`（同一工具的控制台版本，用于无界面运行与 CI）。
 之所以提供控制台版本，是因为窗口程序没有可用的 stdout，用它跑 `--headless` 将完全没有输出。
+第三个可选构建产出 `dist/A2L_Update_Tool_V2.7_onefile.exe`：整个应用打成单个文件，
+可单独复制分发（无需 `_internal` 文件夹）；代价是启动时先自我解压（首启慢数秒），
+且单文件 exe 更容易触发杀软误报。
 
 第 5 节介绍了两个构建的运行方式、打包内容，以及源码改动后如何重新构建。
 
@@ -141,8 +146,9 @@ py A2L_Update_Tool_main.py --headless \
 
 | 产物 | 入口 | 用途 |
 |---|---|---|
-| `dist/A2L_Update_Tool_V2.7/` | `A2L_Update_Tool_V2.7.exe` | 图形界面，窗口程序，双击即运行 |
+| `dist/A2L_Update_Tool_V2.7/` | `A2L_Update_Tool_V2.7.exe` | 图形界面，窗口程序，双击即运行；exe 依赖同目录的 `_internal/` 文件夹——分发时整个文件夹一起拷 |
 | `dist/A2L_Update_Tool_V2.7_cli/` | `A2L_Update_Tool_V2.7_cli.exe` | 同一工具的控制台版本，用于无界面运行与 CI |
+| `dist/A2L_Update_Tool_V2.7_onefile.exe` | 自身 | 单文件图形界面版，可单独复制分发；启动时自我解压（首启较慢） |
 
 ### 5.1 图形界面版本
 

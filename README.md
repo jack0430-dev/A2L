@@ -94,13 +94,18 @@ Linux (CI).
 py -m pip install pyinstaller
 py -m PyInstaller --noconfirm --clean A2L_Update_Tool_V2.7.spec
 py -m PyInstaller --noconfirm --clean A2L_Update_Tool_V2.7_cli.spec
+# optional: one self-contained executable (see the table in §5)
+py -m PyInstaller --noconfirm --clean A2L_Update_Tool_V2.7_onefile.spec
 ```
 
 Two variants are produced: `dist/A2L_Update_Tool_V2.7/` (the GUI) and
 `dist/A2L_Update_Tool_V2.7_cli/` (the same tool as a console program, for
 headless runs and CI). The console variant exists because a windowed
 executable has no usable stdout, so `--headless` would produce no output at
-all.
+all. The third, optional build produces `dist/A2L_Update_Tool_V2.7_onefile.exe`:
+the whole application in a single file that can be copied anywhere on its own
+(no `_internal` folder); it self-extracts at startup, so it starts slower and
+is more likely to trip antivirus heuristics.
 
 §5 describes how to run both builds, what the bundle contains, and how to
 rebuild it after a source change.
@@ -174,8 +179,9 @@ without a Python installation:
 
 | Artefact | Entry point | Use |
 |---|---|---|
-| `dist/A2L_Update_Tool_V2.7/` | `A2L_Update_Tool_V2.7.exe` | GUI, windowed, double-click to run |
+| `dist/A2L_Update_Tool_V2.7/` | `A2L_Update_Tool_V2.7.exe` | GUI, windowed, double-click to run; the exe needs the `_internal/` folder next to it — ship the whole folder |
 | `dist/A2L_Update_Tool_V2.7_cli/` | `A2L_Update_Tool_V2.7_cli.exe` | the same tool as a console program, for headless runs and CI |
+| `dist/A2L_Update_Tool_V2.7_onefile.exe` | itself | GUI in a single file, copyable on its own; self-extracts at startup (slower first launch) |
 
 ### 5.1 GUI build
 
